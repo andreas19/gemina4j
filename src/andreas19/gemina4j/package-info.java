@@ -5,7 +5,9 @@
  *
  * <p>For more details see the
  * <a href="https://github.com/andreas19/gemina-spec#description">Description</a>
- * section.</p>
+ * section.
+ * The source code is on <a target="_top" href="https://github.com/andreas19/gemina4j">GitHub</a>.
+ * </p>
  *
  * <b>BSD 3-Clause License</b>
  * <pre>{@literal
