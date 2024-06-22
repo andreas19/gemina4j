@@ -11,7 +11,6 @@ import java.security.spec.*;
  */
 public class Gemina {
     private final static SecureRandom RAND_GEN = new SecureRandom();
-    private final static int ITERATIONS = 100_000;
     private final static int SALT_LEN = 16; // bytes
     private final static int IV_LEN = 16; // bytes
     private final static int MAC_LEN = 32; // bytes
@@ -149,7 +148,7 @@ public class Gemina {
             throws GeneralSecurityException {
         SecretKeyFactory skf =
             SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
-        KeySpec ks = new PBEKeySpec(password, salt, ITERATIONS,
+        KeySpec ks = new PBEKeySpec(password, salt, version.iterations(),
                                     (version.encKeyLen()
                                      + version.macKeyLen()) * 8);
         SecretKey sk = skf.generateSecret(ks);
