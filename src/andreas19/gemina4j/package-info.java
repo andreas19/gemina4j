@@ -11,7 +11,7 @@
  *
  * <b>BSD 3-Clause License</b>
  * <pre>{@literal
-Copyright (c) 2020, Andreas Suhre <andreas19@posteo.eu>
+Copyright (c) 2020-2024, Andreas Suhre <andreas19@posteo.eu>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
